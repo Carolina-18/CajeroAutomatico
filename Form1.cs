@@ -62,8 +62,10 @@ namespace cajero2
                 }
                 n = 0;
             }
-            lblcambio.Text = "Su cambio es:" + cambio;
-    }
+            //lblcambio.Text = "Su cambio es:" + cambio;
+            lblcambio.Text = "Su cambio es: " + (num1-num2) + cambio;
+
+        }
 
 private void btnsecuencia_Click(object sender, EventArgs e)
         {
@@ -84,14 +86,14 @@ private void btnsecuencia_Click(object sender, EventArgs e)
         }
         private void btnaceptar_Click(object sender, EventArgs e)
         {
-            int a = 0, i, n;
-            n = int.Parse(txtnumero.Text);
+            int a = 0, i, x;
+            x = int.Parse(txtnumero.Text);
         a = 0;
-            for (i = 1; i < (n + 1); i++)
-                if (n % i == 0)
+            for (i = 1; i < (x + 1); i++)
+                if (x % i == 0)
                     a++;
             lblnumres.Visible = true;
-            lblnumres.Text = ((a != 2) ? n + " No es primo " : n + "  Es primo" + "\n");
+            lblnumres.Text = ((a != 2) ? x + " No es primo " : x + "  Es primo" + "\n");
         }
 
         private void button1_Click(object sender, EventArgs e)
