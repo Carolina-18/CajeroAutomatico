@@ -62,7 +62,7 @@ namespace cajero2
                 }
                 n = 0;
             }
-            //lblcambio.Text = "Su cambio es:" + cambio;
+            
             lblcambio.Text = "Su cambio es: " + (num1-num2) + cambio;
 
         }
