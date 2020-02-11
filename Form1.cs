@@ -96,13 +96,9 @@ private void btnsecuencia_Click(object sender, EventArgs e)
             lblnumres.Text = ((a != 2) ? x + " No es primo " : x + "  Es primo" + "\n");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            txtcantidad.Clear();
-            txtcantidad.Focus();
-            lblrespuesta.Text = "";
-        }
-        private void button2_Click(object sender, EventArgs e)
+       
+        
+        private void btnnuevocompra_Click(object sender, EventArgs e)
         {
             txtpagar.Clear();
             txtpagar.Focus();
@@ -110,23 +106,53 @@ private void btnsecuencia_Click(object sender, EventArgs e)
             txtefectivo.Focus();
             lblcambio.Text = "";
         }
-        private void button3_Click(object sender, EventArgs e)
+        private void btnnuevosecu_Click(object sender, EventArgs e)
         {
             txtsecuencia.Clear();
             txtsecuencia.Focus();
             lstsecuencia.Items.Clear(); 
         }
-        private void button4_Click(object sender, EventArgs e)
+       
+        private void btnnuevocajero_Click_1(object sender, EventArgs e)
+        
+            {
+                txtcantidad.Clear();
+                txtcantidad.Focus();
+                lblrespuesta.Text = "";
+            }
+
+        private void btnnuevocompra_Click_1(object sender, EventArgs e)
+        {
+            
+                txtpagar.Clear();
+                txtpagar.Focus();
+                txtefectivo.Clear();
+                txtefectivo.Focus();
+                lblcambio.Text = "";
+            
+        }
+
+        private void btnnuevosecu_Click_1(object sender, EventArgs e)
+        {
+            txtsecuencia.Clear();
+            txtsecuencia.Focus();
+            lstsecuencia.Items.Clear();
+        }
+
+        private void btnnuevoparimpar_Click_1(object sender, EventArgs e)
         {
             txtnumero.Clear();
             txtnumero.Focus();
             lblnumres.Text = "";
         }
-        private void txtnumero_TextChanged(object sender, EventArgs e)
-        {
-        }
+
+        
     }
-}
+    }
+
+
+
+
 
 
 
